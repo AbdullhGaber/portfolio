@@ -38,21 +38,6 @@ built with vanilla HTML, CSS and JavaScript (no build step, no dependencies).
     └── resume/Abdullh_Gaber_Resume.pdf
 ```
 
-## ✏️ A few things worth personalizing
-
-- **LinkedIn URL**: the "LinkedIn" contact card in `index.html` (search for
-  `Connect with me`) currently links to `https://www.linkedin.com/` as a placeholder —
-  swap in your real profile URL.
-- **Project screenshots**: `Mongez` and `Pearl` pull real screenshots directly from
-  their public GitHub repos. The other five projects (`ShopIQ`, `WeatherCast`, `Foodaak`,
-  `WeatherFlavor`, `ToDoApp`, `GameServerEngine`) use stylized abstract mockup tiles
-  instead of real screenshots, since their repos only had private/expiring image links.
-  Drop real screenshots into `assets/images/projects/` and swap the `<div class="shot-mock">`
-  blocks for `<img>` tags (see the Mongez/Pearl cards for the exact markup pattern —
-  each card groups 3 related screens per project) whenever you have them.
-- **Résumé file**: replace `assets/resume/Abdullh_Gaber_Resume.pdf` any time your CV
-  updates — the filename is already wired into both "Download CV" buttons.
-
 ## 🎨 Customizing the theme
 
 All colors, fonts and spacing live in `css/base.css` under `:root` (dark theme) and
