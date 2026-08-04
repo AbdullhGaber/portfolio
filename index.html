@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Abdullh Gaber — Native Android Developer</title>
+<meta name="description" content="Abdullh Gaber — Native Android Developer & Mobile Software Engineer. Kotlin, Jetpack Compose, Clean Architecture. Portfolio of Android, iOS and cross-platform projects." />
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/components.css" />
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#home" class="brand">
+      <span class="bracket">&lt;</span>AbdullhGaber<span class="bracket">/&gt;</span>
+      <span class="dot" aria-hidden="true"></span>
+    </a>
+
+    <div class="nav-tabs" id="navTabs">
+      <a href="#home">home</a>
+      <a href="#skills">skills</a>
+      <a href="#projects">projects</a>
+      <a href="#experience">experience</a>
+      <a href="#contact">contact</a>
+    </div>
+
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark theme" aria-pressed="false">
+        <span class="knob">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="currentColor"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </span>
+      </button>
+      <a href="assets/resume/Abdullh_Gaber_Resume.pdf" class="btn btn-primary" download style="padding:10px 18px; font-size:12.5px;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        <span>CV</span>
+      </a>
+      <button class="nav-burger" id="navBurger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<header class="hero" id="home">
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="container">
+    <div class="hero-grid">
+
+      <div>
+        <div class="hero-kicker reveal">
+          <span class="dot"></span> Available for Android / Mobile roles
+        </div>
+
+        <h1 class="reveal reveal-delay-1">Abdullh Gaber</h1>
+        <p class="hero-role reveal reveal-delay-1">// Native Android Developer &amp; Mobile Software Engineer</p>
+
+        <p class="hero-summary reveal reveal-delay-2">
+          Results-driven native Android developer focused on building scalable, high-performance
+          mobile applications. I work primarily in Kotlin and Jetpack Compose, with a strong
+          foundation in Clean Architecture, MVVM and MVP — integrating RESTful APIs, local
+          caching and asynchronous data streams to ship responsive, maintainable apps.
+        </p>
+
+        <div class="hero-ctas reveal reveal-delay-2">
+          <a href="assets/resume/Abdullh_Gaber_Resume.pdf" class="btn btn-primary" download>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download CV
+          </a>
+          <a href="#contact" class="btn btn-ghost">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z" opacity="0"/><path d="M22 6l-10 7L2 6"/><path d="M2 6h20v12H2z"/></svg>
+            Contact Me
+          </a>
+        </div>
+
+        <div class="hero-stats reveal reveal-delay-3">
+          <div class="hero-stat">
+            <b>8+</b>
+            <span>Shipped Apps</span>
+          </div>
+          <div class="hero-stat">
+            <b>3.7 / 4.0</b>
+            <span>CGPA — Mansoura Univ.</span>
+          </div>
+          <div class="hero-stat">
+            <b>1st</b>
+            <span>Egypt AI &amp; IoT Challenge '24</span>
+          </div>
+        </div>
+      </div>
+
+      <div style="display:flex; flex-direction:column; align-items:center; gap:28px;">
+        <div class="hero-portrait reveal reveal-delay-1">
+          <img src="assets/images/profile.png" alt="Portrait of Abdullh Gaber" />
+          <div class="hero-portrait-tag"><span class="dot"></span>Cairo, EG</div>
+        </div>
+
+        <div class="terminal reveal reveal-delay-2" style="width:100%;">
+          <div class="terminal-bar">
+            <span class="tdot"></span><span class="tdot"></span><span class="tdot"></span>
+            <span>zsh — abdullh@android</span>
+          </div>
+          <div class="terminal-body" id="terminalBody"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+<!-- ================= TRUST STRIP ================= -->
+<div class="trust-strip">
+  <div class="container">
+    <div class="trust-row">
+      <div class="trust-chip reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 6 6 1-4.5 4 1 6-5.5-3-5.5 3 1-6L3 9l6-1 3-6z"/></svg>
+        Egypt AI &amp; IoT Challenge 2024 — Best Promising Idea
+      </div>
+      <div class="trust-chip reveal reveal-delay-1">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/><path d="M8 4v-1M16 4v-1"/></svg>
+        JETS MobileX Challenge 2026 — ITI Smart Village
+      </div>
+      <div class="trust-chip reveal reveal-delay-2">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5-10-5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+        ITI — Mobile Applications Development, Native
+      </div>
+      <div class="trust-chip reveal reveal-delay-3">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/></svg>
+        Military Status — Exempted
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= SKILLS ================= -->
+<section class="section-pad" id="skills">
+  <div class="container">
+    <div class="eyebrow reveal">02 · Toolbox</div>
+    <h2 class="section-title reveal">Skills &amp; Technologies</h2>
+    <p class="section-sub reveal">
+      A full-stack native mobile toolkit — from Kotlin fundamentals to production architecture,
+      async data handling and cross-platform experience.
+    </p>
+
+    <div class="skills-grid">
+
+      <div class="skill-card reveal">
+        <div class="skill-card-head">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span>
+          <h3>Languages</h3>
+        </div>
+        <div class="tag-row">
+          <span class="tag">Kotlin</span><span class="tag">Java</span><span class="tag">Swift</span>
+          <span class="tag">Objective-C</span><span class="tag">Dart</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-card-head">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="3"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg></span>
+          <h3>Android Development</h3>
+        </div>
+        <div class="tag-row">
+          <span class="tag">Android SDK</span><span class="tag">Jetpack Compose</span><span class="tag">XML Views</span>
+          <span class="tag">Architecture Components</span><span class="tag">Navigation</span>
+          <span class="tag">Lifecycle</span><span class="tag">Custom Views</span><span class="tag">App Bundles</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-card-head">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></span>
+          <h3>Architecture &amp; Design</h3>
+        </div>
+        <div class="tag-row">
+          <span class="tag">Clean Architecture</span><span class="tag">MVVM</span><span class="tag">MVP</span>
+          <span class="tag">MVC</span><span class="tag">MVI</span><span class="tag">SOLID</span>
+          <span class="tag">Material Design 3</span><span class="tag">Modularization</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-card-head">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2"/></svg></span>
+          <h3>iOS &amp; Cross-Platform</h3>
+        </div>
+        <div class="tag-row">
+          <span class="tag">iOS SDK</span><span class="tag">SwiftUI</span><span class="tag">UIKit</span>
+          <span class="tag">Core Data</span><span class="tag">Flutter SDK</span><span class="tag">Platform Channels</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-card-head">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></span>
+          <h3>Async &amp; Concurrency</h3>
+        </div>
+        <div class="tag-row">
+          <span class="tag">Coroutines</span><span class="tag">Flow</span><span class="tag">RxJava3</span>
+          <span class="tag">StateFlow</span><span class="tag">SharedFlow</span><span class="tag">LiveData</span>
+          <span class="tag">WorkManager</span><span class="tag">Combine</span><span class="tag">LeakCanary</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-card-head">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.6V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.6-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.6-1 1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.9.3H9a1.7 1.7 0 0 0 1-1.6V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.6 1.7 1.7 0 0 0 1.9-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.9V9a1.7 1.7 0 0 0 1.6 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.6 1z"/></svg></span>
+          <h3>Dependency Injection</h3>
+        </div>
+        <div class="tag-row">
+          <span class="tag">Dagger Hilt</span><span class="tag">Koin</span><span class="tag">Dagger2</span><span class="tag">Swinject</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-card-head">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></span>
+          <h3>Data &amp; Offline Storage</h3>
+        </div>
+        <div class="tag-row">
+          <span class="tag">Room</span><span class="tag">DataStore</span><span class="tag">SQLite</span><span class="tag">Caching Strategies</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-card-head">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></svg></span>
+          <h3>Networking &amp; APIs</h3>
+        </div>
+        <div class="tag-row">
+          <span class="tag">REST</span><span class="tag">Retrofit</span><span class="tag">Ktor Client</span>
+          <span class="tag">GraphQL</span><span class="tag">Gson</span><span class="tag">kotlinx.serialization</span><span class="tag">WebSockets</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-card-head">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5L5 21"/></svg></span>
+          <h3>UI &amp; Image Loading</h3>
+        </div>
+        <div class="tag-row">
+          <span class="tag">View Binding</span><span class="tag">Data Binding</span><span class="tag">Coil</span>
+          <span class="tag">Glide</span><span class="tag">Lottie</span><span class="tag">MotionLayout</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-card-head">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></span>
+          <h3>Testing &amp; QA</h3>
+        </div>
+        <div class="tag-row">
+          <span class="tag">TDD</span><span class="tag">JUnit 4/5</span><span class="tag">MockK</span>
+          <span class="tag">Mockito</span><span class="tag">Espresso</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-card-head">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg></span>
+          <h3>Backend &amp; Cloud / Tools</h3>
+        </div>
+        <div class="tag-row">
+          <span class="tag">Firebase</span><span class="tag">Git</span><span class="tag">GitHub</span>
+          <span class="tag">GitLab</span><span class="tag">GitHub Actions</span><span class="tag">Bitrise</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section class="section-pad" id="projects" style="background:var(--bg-alt);">
+  <div class="container">
+    <div class="eyebrow reveal">03 · Selected Work</div>
+    <h2 class="section-title reveal">Projects</h2>
+    <p class="section-sub reveal">
+      A mix of hackathon builds, a graduation project and personal explorations — spanning
+      native Android, iOS and multiplayer systems programming.
+    </p>
+
+    <div class="project-filter reveal">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="android">Android</button>
+      <button class="filter-btn" data-filter="ios">iOS</button>
+      <button class="filter-btn" data-filter="other">Systems</button>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- 1. Mongez -->
+      <article class="project-card reveal" data-tags="android">
+        <div class="project-shots">
+          <div class="shot">
+            <img src="assets/images/mongez_thumbnail.png" alt="Mongez project thumbnail" loading="lazy" />
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-top">
+            <h3>Mongez</h3>
+            <span class="project-platform">Android</span>
+          </div>
+          <p class="project-desc">
+            AI-powered study planner that turns a messy syllabus into a dynamic semester
+            roadmap, with a contextual AI study assistant grounded in each student's own
+            course materials.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Kotlin</span><span class="tag">Jetpack Compose</span><span class="tag">MVI</span>
+            <span class="tag">Clean Architecture</span><span class="tag">Firebase Auth</span><span class="tag">Room</span><span class="tag">Dagger Hilt</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Mongez-App/Mongez-android" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5v-1.94c-2.78.62-3.37-1.36-3.37-1.36-.46-1.18-1.11-1.5-1.11-1.5-.9-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.9 1.57 2.34 1.12 2.91.86.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.05 0-1.11.38-2.03 1.02-2.74-.1-.26-.44-1.31.1-2.72 0 0 .83-.27 2.75 1.05A9.3 9.3 0 0 1 12 6.84c.85 0 1.71.12 2.51.35 1.91-1.32 2.75-1.05 2.75-1.05.54 1.41.2 2.46.1 2.72.64.71 1.02 1.63 1.02 2.74 0 3.92-2.35 4.78-4.58 5.04.36.32.68.94.68 1.9v2.82c0 .28.18.6.69.5A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 2. ShopIQ -->
+      <article class="project-card reveal" data-tags="android">
+        <div class="project-shots">
+          <div class="shot">
+            <img src="assets/images/shop_iq_thumbnail.png" alt="ShopIQ project thumbnail" loading="lazy" />
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-top">
+            <h3>ShopIQ</h3>
+            <span class="project-platform">Android</span>
+          </div>
+          <span class="project-badge">🏆 JETS MobileX Challenge 2026</span>
+          <p class="project-desc">
+            Production-grade, Shopify-powered m-commerce app consuming dual Storefront &amp; Admin
+            GraphQL APIs, with an in-app Gemini shopping assistant and a fully bilingual
+            English/Arabic RTL experience.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Kotlin</span><span class="tag">Apollo GraphQL</span><span class="tag">Ktor</span>
+            <span class="tag">MVI</span><span class="tag">Koin</span><span class="tag">Gemini AI</span><span class="tag">Paymob SDK</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/ShopIQ-ORG/ShopIQ" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5v-1.94c-2.78.62-3.37-1.36-3.37-1.36-.46-1.18-1.11-1.5-1.11-1.5-.9-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.9 1.57 2.34 1.12 2.91.86.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.05 0-1.11.38-2.03 1.02-2.74-.1-.26-.44-1.31.1-2.72 0 0 .83-.27 2.75 1.05A9.3 9.3 0 0 1 12 6.84c.85 0 1.71.12 2.51.35 1.91-1.32 2.75-1.05 2.75-1.05.54 1.41.2 2.46.1 2.72.64.71 1.02 1.63 1.02 2.74 0 3.92-2.35 4.78-4.58 5.04.36.32.68.94.68 1.9v2.82c0 .28.18.6.69.5A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 3. Pearl -->
+      <article class="project-card reveal" data-tags="android">
+        <div class="project-shots">
+          <div class="shot">
+            <img src="assets/images/pearl_thumbnail.png" alt="Pearl project thumbnail" loading="lazy" />
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-top">
+            <h3>Pearl</h3>
+            <span class="project-platform">Android / Web</span>
+          </div>
+          <span class="project-badge">🏆 Best Promising Idea — Egypt AI &amp; IoT 2024</span>
+          <p class="project-desc">
+            Automated skincare &amp; dermatology companion — personalized skin diagnostics,
+            product recommendations and dermatologist appointment booking, backed by an
+            on-device TensorFlow model. University graduation project.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Kotlin</span><span class="tag">Jetpack Compose</span><span class="tag">TensorFlow</span>
+            <span class="tag">Firebase</span><span class="tag">Twilio</span><span class="tag">Retrofit</span><span class="tag">Room</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/AbdullhGaber/PearlAndroidProjectCleanArchitecture" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5v-1.94c-2.78.62-3.37-1.36-3.37-1.36-.46-1.18-1.11-1.5-1.11-1.5-.9-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.9 1.57 2.34 1.12 2.91.86.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.05 0-1.11.38-2.03 1.02-2.74-.1-.26-.44-1.31.1-2.72 0 0 .83-.27 2.75 1.05A9.3 9.3 0 0 1 12 6.84c.85 0 1.71.12 2.51.35 1.91-1.32 2.75-1.05 2.75-1.05.54 1.41.2 2.46.1 2.72.64.71 1.02 1.63 1.02 2.74 0 3.92-2.35 4.78-4.58 5.04.36.32.68.94.68 1.9v2.82c0 .28.18.6.69.5A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 4. WeatherCast -->
+      <article class="project-card reveal" data-tags="ios">
+        <div class="project-shots">
+          <div class="shot">
+            <img src="assets/images/weathercast_thumbnail.png" alt="WeatherCast project thumbnail" loading="lazy" />
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-top">
+            <h3>WeatherCast</h3>
+            <span class="project-platform">iOS</span>
+          </div>
+          <p class="project-desc">
+            Glassmorphism iOS weather app whose theme follows the searched city's local
+            clock rather than the device's — bright mornings, dark nights, wherever you
+            look up.
+          </p>
+          <div class="project-tags">
+            <span class="tag">SwiftUI</span><span class="tag">Clean Architecture</span><span class="tag">MVVM</span>
+            <span class="tag">Alamofire</span><span class="tag">SwiftData</span><span class="tag">Swinject</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/AbdullhGaber/WeatherCast" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5v-1.94c-2.78.62-3.37-1.36-3.37-1.36-.46-1.18-1.11-1.5-1.11-1.5-.9-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.9 1.57 2.34 1.12 2.91.86.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.05 0-1.11.38-2.03 1.02-2.74-.1-.26-.44-1.31.1-2.72 0 0 .83-.27 2.75 1.05A9.3 9.3 0 0 1 12 6.84c.85 0 1.71.12 2.51.35 1.91-1.32 2.75-1.05 2.75-1.05.54 1.41.2 2.46.1 2.72.64.71 1.02 1.63 1.02 2.74 0 3.92-2.35 4.78-4.58 5.04.36.32.68.94.68 1.9v2.82c0 .28.18.6.69.5A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 5. Foodaak -->
+      <article class="project-card reveal" data-tags="android">
+        <div class="project-shots">
+          <div class="shot">
+            <img src="assets/images/foodaak_thumbnail.png" alt="Foodaak project thumbnail" loading="lazy" />
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-top">
+            <h3>Foodaak</h3>
+            <span class="project-platform">Android</span>
+          </div>
+          <p class="project-desc">
+            Meal discovery &amp; planning app for browsing meals by category and area,
+            saving favorites and signing in with email or Google, on an MVP + Clean
+            Architecture foundation.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Java</span><span class="tag">MVP</span><span class="tag">Dagger Hilt</span>
+            <span class="tag">RxJava3</span><span class="tag">Firebase</span><span class="tag">Room</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/AbdullhGaber/-ITI-FoodPlanner-Android-Java" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5v-1.94c-2.78.62-3.37-1.36-3.37-1.36-.46-1.18-1.11-1.5-1.11-1.5-.9-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.9 1.57 2.34 1.12 2.91.86.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.05 0-1.11.38-2.03 1.02-2.74-.1-.26-.44-1.31.1-2.72 0 0 .83-.27 2.75 1.05A9.3 9.3 0 0 1 12 6.84c.85 0 1.71.12 2.51.35 1.91-1.32 2.75-1.05 2.75-1.05.54 1.41.2 2.46.1 2.72.64.71 1.02 1.63 1.02 2.74 0 3.92-2.35 4.78-4.58 5.04.36.32.68.94.68 1.9v2.82c0 .28.18.6.69.5A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 6. WeatherFlavor -->
+      <article class="project-card reveal" data-tags="android">
+        <div class="project-shots">
+          <div class="shot">
+            <img src="assets/images/weatherflavor_thumbnail.png" alt="WeatherFlavor project thumbnail" loading="lazy" />
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-top">
+            <h3>WeatherFlavor</h3>
+            <span class="project-platform">Android</span>
+          </div>
+          <p class="project-desc">
+            Compose weather app with time-based background alerts that keep firing
+            reliably across reboots, full English/Arabic RTL support, and a custom
+            strategy pattern to work around restrictive OS background limits.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Jetpack Compose</span><span class="tag">MVVM</span><span class="tag">WorkManager</span>
+            <span class="tag">AlarmManager</span><span class="tag">Hilt</span><span class="tag">Room</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/AbdullhGaber/ITI_Android_JetpackCompose_WeatherApp" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5v-1.94c-2.78.62-3.37-1.36-3.37-1.36-.46-1.18-1.11-1.5-1.11-1.5-.9-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.9 1.57 2.34 1.12 2.91.86.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.05 0-1.11.38-2.03 1.02-2.74-.1-.26-.44-1.31.1-2.72 0 0 .83-.27 2.75 1.05A9.3 9.3 0 0 1 12 6.84c.85 0 1.71.12 2.51.35 1.91-1.32 2.75-1.05 2.75-1.05.54 1.41.2 2.46.1 2.72.64.71 1.02 1.63 1.02 2.74 0 3.92-2.35 4.78-4.58 5.04.36.32.68.94.68 1.9v2.82c0 .28.18.6.69.5A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 7. ToDoApp iOS -->
+      <article class="project-card reveal" data-tags="ios">
+        <div class="project-shots">
+          <div class="shot">
+            <img src="assets/images/todoapp_thumbnail.png" alt="ToDoApp project thumbnail" loading="lazy" />
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-top">
+            <h3>ToDoApp</h3>
+            <span class="project-platform">iOS · Objective-C</span>
+          </div>
+          <p class="project-desc">
+            Native task manager built in Objective-C — category &amp; priority organization,
+            swipeable rows and local persistence, written to master UIKit and MVC
+            fundamentals.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Objective-C</span><span class="tag">UIKit</span><span class="tag">MVC</span><span class="tag">NSUserDefaults</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/AbdullhGaber/ToDoApp_IOS_ObjC" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5v-1.94c-2.78.62-3.37-1.36-3.37-1.36-.46-1.18-1.11-1.5-1.11-1.5-.9-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.9 1.57 2.34 1.12 2.91.86.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.05 0-1.11.38-2.03 1.02-2.74-.1-.26-.44-1.31.1-2.72 0 0 .83-.27 2.75 1.05A9.3 9.3 0 0 1 12 6.84c.85 0 1.71.12 2.51.35 1.91-1.32 2.75-1.05 2.75-1.05.54 1.41.2 2.46.1 2.72.64.71 1.02 1.63 1.02 2.74 0 3.92-2.35 4.78-4.58 5.04.36.32.68.94.68 1.9v2.82c0 .28.18.6.69.5A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 8. TicTacToe / GameServerEngine -->
+      <article class="project-card reveal" data-tags="other">
+        <div class="project-shots">
+          <div class="shot">
+            <img src="assets/images/gameserver_thumbnail.png" alt="GameServerEngine project thumbnail" loading="lazy" />
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-top">
+            <h3>GameServerEngine</h3>
+            <span class="project-platform">Java</span>
+          </div>
+          <p class="project-desc">
+            Real-time multiplayer engine built on raw Java socket programming — a threaded
+            game server paired with a JavaFX client for lobbies, live matches and
+            replayable match history.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Java</span><span class="tag">Socket Programming</span><span class="tag">Network IO</span>
+            <span class="tag">JavaFX</span><span class="tag">Multithreading</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/ITI-Tic-Tac-Toe-Java/TicTacToeApp" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5v-1.94c-2.78.62-3.37-1.36-3.37-1.36-.46-1.18-1.11-1.5-1.11-1.5-.9-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.9 1.57 2.34 1.12 2.91.86.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.05 0-1.11.38-2.03 1.02-2.74-.1-.26-.44-1.31.1-2.72 0 0 .83-.27 2.75 1.05A9.3 9.3 0 0 1 12 6.84c.85 0 1.71.12 2.51.35 1.91-1.32 2.75-1.05 2.75-1.05.54 1.41.2 2.46.1 2.72.64.71 1.02 1.63 1.02 2.74 0 3.92-2.35 4.78-4.58 5.04.36.32.68.94.68 1.9v2.82c0 .28.18.6.69.5A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= EXPERIENCE / EDUCATION ================= -->
+<section class="section-pad" id="experience">
+  <div class="container">
+    <div class="eyebrow reveal">04 · Path</div>
+    <h2 class="section-title reveal">Education &amp; Experience</h2>
+    <p class="section-sub reveal">
+      A software engineering degree, an intensive native-mobile diploma, and a string of
+      hands-on scholarships in between.
+    </p>
+
+    <div class="timeline">
+
+      <div class="tl-item reveal">
+        <span class="tl-node"></span>
+        <div class="tl-card">
+          <div class="tl-date">Sept. 2020 — July 2024</div>
+          <h3>B.Sc. Software Engineering</h3>
+          <div class="tl-org">Mansoura University · Mansoura, Egypt</div>
+          <p>CGPA 3.7 / 4.0. Core software engineering foundation — data structures, algorithms and OOP principles that carried directly into mobile architecture work.</p>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <span class="tl-node"></span>
+        <div class="tl-card">
+          <div class="tl-date">June — Dec. 2022</div>
+          <h3>ITI Tech-Leaps — Android</h3>
+          <div class="tl-org">ITI &amp; Pluralsight · Scholarship</div>
+          <ul>
+            <li>6-month curriculum in advanced Android development, data structures and software engineering best practices.</li>
+            <li>Weekly assignments applying SOLID principles, Clean Code and OOP paradigms.</li>
+            <li>Kotlin Coroutines, advanced Gradle configuration and Git/GitHub workflows.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <span class="tl-node"></span>
+        <div class="tl-card">
+          <div class="tl-date">July — Aug. 2023</div>
+          <h3>ITI Android Summer Training — 150 hrs</h3>
+          <div class="tl-org">Scholarship</div>
+          <p>Delivered functional Android mini-projects, integrating socket programming, multithreading and third-party APIs.</p>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <span class="tl-node"></span>
+        <div class="tl-card">
+          <div class="tl-date">June — Oct. 2024</div>
+          <h3>4-Month Intensive Android Diploma</h3>
+          <div class="tl-org">Route Academy · Scholarship</div>
+          <p>Java, Kotlin, XML Views and Jetpack Compose — from fundamentals through to modern declarative UI.</p>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <span class="tl-node"></span>
+        <div class="tl-card">
+          <div class="tl-date">Oct. 2025 — July 2026</div>
+          <h3>Mobile Applications Development — Native</h3>
+          <div class="tl-org">Information Technology Institute (ITI) · Alexandria, Egypt</div>
+          <p>9-month professional diploma focused on production-grade native Android engineering — Clean Architecture, MVI, multi-module apps and full-stack mobile delivery.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="section-pad" id="contact" style="background:var(--bg-alt);">
+  <div class="container">
+    <div class="eyebrow reveal">05 · Get in Touch</div>
+    <h2 class="section-title reveal">Let's build something</h2>
+    <p class="section-sub reveal">
+      Open to native Android and mobile engineering roles — happy to walk through any
+      project above in more depth.
+    </p>
+
+    <div class="contact-wrap">
+      <div class="contact-panel reveal">
+        <span class="eyebrow" style="margin-bottom:0;">Reach me directly</span>
+        <div class="contact-links">
+          <a class="contact-link" href="mailto:abdullh.gaber.dev@gmail.com">
+            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z" opacity="0"/><path d="M22 6l-10 7L2 6"/><path d="M2 6h20v12H2z"/></svg></span>
+            <span class="meta"><b>Email</b><span>abdullh.gaber.dev@gmail.com</span></span>
+          </a>
+          <a class="contact-link" href="tel:+201010440206">
+            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.4 2.1L8.1 9.7a16 16 0 0 0 6.2 6.2l1.2-1.2a2 2 0 0 1 2.1-.4c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2z"/></svg></span>
+            <span class="meta"><b>Phone</b><span>+20 101 044 0206</span></span>
+          </a>
+          <a class="contact-link" href="https://github.com/AbdullhGaber" target="_blank" rel="noopener">
+            <span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5v-1.94c-2.78.62-3.37-1.36-3.37-1.36-.46-1.18-1.11-1.5-1.11-1.5-.9-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.9 1.57 2.34 1.12 2.91.86.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.05 0-1.11.38-2.03 1.02-2.74-.1-.26-.44-1.31.1-2.72 0 0 .83-.27 2.75 1.05A9.3 9.3 0 0 1 12 6.84c.85 0 1.71.12 2.51.35 1.91-1.32 2.75-1.05 2.75-1.05.54 1.41.2 2.46.1 2.72.64.71 1.02 1.63 1.02 2.74 0 3.92-2.35 4.78-4.58 5.04.36.32.68.94.68 1.9v2.82c0 .28.18.6.69.5A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2z"/></svg></span>
+            <span class="meta"><b>GitHub</b><span>github.com/AbdullhGaber</span></span>
+          </a>
+          <a class="contact-link" href="https://www.linkedin.com/in/abdullh-gaber-887474221/" target="_blank" rel="noopener">
+            <span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.9 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8.5h4V23h-4V8.5zM8.5 8.5h3.8v2h.05c.53-1 1.83-2.05 3.77-2.05C20.1 8.45 21 11 21 14.35V23h-4v-7.5c0-1.8-.03-4.1-2.5-4.1-2.5 0-2.9 1.95-2.9 3.97V23h-4V8.5z"/></svg></span>
+            <span class="meta"><b>LinkedIn</b><span>Connect with me</span></span>
+          </a>
+        </div>
+      </div>
+
+      <div class="availability-card reveal">
+        <div class="avail-pill"><span class="dot"></span>Currently: ITI Native Mobile Diploma</div>
+        <h3 style="font-size:22px; margin-bottom:14px;">Cairo-based, open to relocation &amp; remote</h3>
+        <p style="color:var(--text-dim); font-size:14.5px; margin-bottom:22px;">
+          Military service status: Exempted — no restrictions on start date. Looking for
+          teams shipping real native Android products with room to own architecture
+          decisions end-to-end.
+        </p>
+        <a href="assets/resume/Abdullh_Gaber_Resume.pdf" class="btn btn-primary" download style="width:fit-content;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download Full Résumé
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>© <span id="year">2026</span> Abdullh Gaber — built with vanilla HTML / CSS / JS</span>
+    <div class="footer-links">
+      <a href="#home">home</a>
+      <a href="https://github.com/AbdullhGaber" target="_blank" rel="noopener">github</a>
+      <a href="mailto:abdullh.gaber.dev@gmail.com">email</a>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>
